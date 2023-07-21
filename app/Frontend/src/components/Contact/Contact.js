@@ -1,73 +1,74 @@
-import '../../style.css';
+import './Contact.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 function Contact() {
     return (
-        <div>
-            <div className="contact_info">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-10 offset-lg-1">
-                            <div className="contact_info_container d-flex flex-lg-row flex-column justify-content-between align-items-between">
-
-                                <div className="contact_info_item d-flex flex-row align-items-center justify-content-start">
-                                    <div className="contact_info_image"><img src="https://img.icons8.com/office/24/000000/iphone.png" alt="" /></div>
-                                    <div className="contact_info_content">
-                                        <div className="contact_info_title">Phone</div>
-                                        <div className="contact_info_text">+91 9876 543 2198</div>
-                                    </div>
-                                </div>
-
-                                <div className="contact_info_item d-flex flex-row align-items-center justify-content-start">
-                                    <div className="contact_info_image"><img src="https://img.icons8.com/ultraviolet/24/000000/filled-message.png" alt="" /></div>
-                                    <div className="contact_info_content">
-                                        <div className="contact_info_title">Email</div>
-                                        <div className="contact_info_text">contact@bbbootstrap.com</div>
-                                    </div>
-                                </div>
-
-
-                                <div className="contact_info_item d-flex flex-row align-items-center justify-content-start">
-                                    <div className="contact_info_image"><img src="https://img.icons8.com/ultraviolet/24/000000/map-marker.png" alt="" /></div>
-                                    <div className="contact_info_content">
-                                        <div className="contact_info_title">Address</div>
-                                        <div className="contact_info_text">298,Menlo Park,CA,USA</div>
-                                    </div>
-                                </div>
-
-                            </div>
+       <div>
+            <section id="templatemo_contact">
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-12">
+                        <header className="template_header">
+                            <h1 className="text-center"><span>...</span> Contact <span>...</span></h1>
+                        </header>
+                        <p className="text-center">
+                            <i className="fa fa-map-marker"></i> 1234 Lincoln Way, San Francisco, California<br />
+                            <i className="fa fa-envelope"></i> Email: <a href="mailto:info@company.com">info@company.com</a><br />
+                            <i className="fa fa-phone"></i> Phone: <a href="tel:010-020-0340">010-020-0340</a>
+                        </p>
+                    </div>
+                </div>
+                <form action="#" method="post">
+                    <div className="form-group">
+                        <div className="input-group">
+                            <div className="input-group-addon"><i className="fa fa-user"></i></div>
+                            <input type="text" name="name" className="form-control" id="contact-name" placeholder="Name"/>
                         </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <div className="input-group-addon"><i className="fa fa-at"></i></div>
+                            <input type="text" name="email" className="form-control" placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <div className="input-group-addon"><i className="fa fa-envelope-o"></i></div>
+                            <textarea name="message" className="form-control" id="contact-message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <div className="col-xs-6 col-xs-offset-6">
+                            <button type="submit" className="form-control">Send</button>
+                        </div>
+                    </div>
+                </form>
+                <div className="row">
+                    <div className="col-md-6 col-md-offset-3">
+                        <ul className="nav nav-pills social">
+                            <li><a href="www.facebook.com" className="shadow-top-down social-facebook"><i className="fa fa-facebook-official"></i></a></li>
+                            <li><a href="www.twitter.com" className="shadow-top-down social-twitter"><i className="fa fa-twitter-square"></i></a></li>
+                            <li><a href="www.youtube.com" className="shadow-top-down social-youtube"><i className="fa fa-youtube-square"></i></a></li>
+                            <li><a href="www.instagram.com" className="shadow-top-down social-instagram"><i className="fa fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-
-            <div className="contact_form">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-10 offset-lg-1">
-                            <div className="contact_form_container">
-                                <div className="contact_form_title">Get in Touch</div>
-
-                                <form action="#" id="contact_form">
-                                    <div className="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
-                                        <input type="text" id="contact_form_name" className="contact_form_name input_field" placeholder="Your name" required="required" data-error="Name is required." />
-                                        <input type="text" id="contact_form_email" className="contact_form_email input_field" placeholder="Your email" required="required" data-error="Email is required." />
-                                        <input type="text" id="contact_form_phone" className="contact_form_phone input_field" placeholder="Your phone number" />
-                                    </div>
-                                    <div className="contact_form_text">
-                                        <textarea id="contact_form_message" className="text_field contact_form_message" name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-                                    </div>
-                                    <div className="contact_form_button">
-                                        <button type="submit" className="button contact_submit_button">Send Message</button>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
+        </section> 
+        
+        <footer>
+            <div className="container">
+                <div className="row">
+                    <div className="col-xs-12 footer-copyright">
+                        <p>Copyright &copy; 2084 <a href="www.google.com" target="_parent">Google</a></p>
                     </div>
                 </div>
-                <div className="panel"></div>
             </div>
-        </div>
+        </footer>
+       </div>
 
     )
 

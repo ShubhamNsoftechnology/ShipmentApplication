@@ -1,8 +1,9 @@
 .navbarr {
-    background-color: #f2f2f2;
-    padding: 10px;
+    background-color: #f2f2f2 ;
+    padding: 10px ;
+    /* height: 40px; */
+    /* width: 100%; */
 }
-  
 .navbar-navv {
     list-style-type: none;
     display: flex;
@@ -12,6 +13,8 @@
   
 .nav-itemm {
     margin-right: 10px;
+    /* width: 150px; */
+    /* height: 50px; */
 }
 
 .navbar-nav {

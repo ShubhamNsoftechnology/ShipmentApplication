@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import './NavBar.css';
 
 
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Services from '../components/pages/Services';
+import Home from '../components/Home/Home';
+import About from '../components/About/About';
+import Contact from '../components/Contact/Contact';
+import Services from '../components/Services/Services';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faEnvelope, faCog, faUserPlus, faUserCog } from '@fortawesome/free-solid-svg-icons';
 // import FAQ from './components/FAQ';
-import BootStrap from './components/pages/BootStrap';
-import User from '../components/pages/User';
+import BootStrap from '../components/Regisration/BootStrap';
+import User from '../components/User/User';
+// import Homenew from '../components/Home/Homenew';
 const App = () => {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
   return (
